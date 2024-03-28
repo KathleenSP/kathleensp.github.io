@@ -1,9 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kathleen's Personal Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bc95bae8d1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
+            <div class="container-fluid">
+              <a class="logo">
+                <img src="2.png" alt="Logo"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-<body>
-  <h1>KathlennSP</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+        <div id="header">
+            <div class="container">
+                <img src="kathleenpachecopp.JPG" class="kppic">
+                
+                <div id="header-text"> <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi there, I'm Kathleen Pacheco from Atlanta, Georgia!</h1>
+                </div>
+            </div>
+        </div>
+        <!------------------------------about--------------------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1"></div>
+                    
+                    <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hi there! I'm Kathleen, a passionate web designer dedicated to crafting digital experiences
+                        that captivate and engage users. With a background in IT support, HTML, JavaScript and CSS. 
+                        I bring a unique blend of creativity and technical expertise to every project.</p>
 
+                        <div class="table-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('my work')">My Work</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> IT Analyst</span><br>As an IT analyst, I specialize in providing fundamental and essential services to ensure the smooth functioning of your technological landscape. 
+                                    I offer a range of services that include system analysis, troubleshooting, and technical support. 
+                                    I am dedicated to delivering reliable and effective support to enhance your business's technological efficiency.</li>
+                                <li><span>Web Designer</span><br>Web designer adept in HTML, JavaScript, and CSS.
+                                    As a passionate web designer, I specialize in crafting visually appealing and user-friendly websites tailored to meet your unique needs, such as this website.
+                                    I strive to create websites that not only captivate visitors but also deliver a seamless and engaging user experience.</li>
+                                    </ul>
+                                </div>
+                            <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span> January 2024</span><br>W3Schools JavaScript Developer Certification</li>
+                                        <li><span>July 2023</span><br>W3Schools HTML Developer Certification</li>
+                                        <li><span>May 2023</span><br>Google IT Support Professional Certificate</li>
+                                    </ul>
+                                        </div>
+                                        <div class="tab-contents" id="my work">
+                                            <ul>
+                                                <li><span>Weather App</span><br>Integrated a weather API to fetch real-time weather data
+                                                    and display it to users. <span class="users"><a href="http://54.91.205.134:3000">Click here to check it out!</a></span></li>
+                                                <li><span>Shopify store</span><br>I utilized Shopify to gain hands-on experience in various
+                                                    functions of the platform.</li>
+                                                    </ul>
+                                                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!------------------------services--------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <h2>IT Support</h2>
+                        <p>Able to support tasks including computer assembly, 
+                            wireless networking, installing programs, and customer service.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Designing</h2>
+                        <p>Combining creativity with technical proficiency, I specialize in crafting visually appealing and 
+                            user-friendly interfaces for responsive web design.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!------------------------contact------------------------------------>
+        <!-- 1.32 mins -->
+        <div class="horizontal-line"></div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>        kathleensiria2@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>  (470) 305-2508</p>
+                    <div class="contact-left"></div>
+                </div>
+            </div>
+        </div>
+        <button><a href="Kathleen Pacheco resume copy.pdf" class="button">Download Resume</a></button>
+        
+        <div class="copyright">
+            <p>Kathleen Pacheco's Personal Portfolio</p>
+        </div>
+       
+       <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+        }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        }
+</script>
+    </body>
 </html>
