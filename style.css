@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #484848;
+    color: #ffffff;
+}
+#header{
+    width: 100%;
+    height: 50vh;
+}
+.logo img{
+    width: 90px; 
+    height: 90px;
+    border-radius: 10px; 
+  }
+.container{
+    padding: 10px 1.5%;
+}
+.kppic {
+    width: 430px;
+    height: 430px;
+    float: right; 
+    margin-right: 20px;
+    border-radius: 2%;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color:#82dbfe;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text p{
+margin-top: 20%;
+margin-bottom: 0.5%;
+font-size: 32px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 0%;
+}
+/* -----------------about------------------- */
+#about{
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 22px;
+}
+/* .row{
+    position: relative;
+} */
+.sub-title{
+    font-size: 45px;
+    font-weight: 600;
+    color:#82dbfe
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    display:inline-block;
+    padding-top: 2%;
+    color:#d9b3ff;
+}
+.tab-links::after{
+    content:' ';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after{
+    width:75%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 55px 0;
+    font-size: 27px;
+    
+}
+.tab-contents ul li span{
+    color:#82dbfe;
+    font-size: 20px;
+}
+.tab-contents ul li span a{
+    color: #0fa9ec;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*-----------------services-----------------*/
+#services{
+    padding: 30px 0;
+    text-align: center;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #755c8d;
+    padding: 40px;
+    font-size: 15.2px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+
+background: #c9a3ef;
+transform: translateY(-10px);
+}
+/*--------------------------------------Contact Me------------------------------------------*/
+.horizontal-line {
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+        border-top: 3px solid;
+        color: rgb(255, 255, 255);
+    }
+.fa-solid fa-envelope {
+    display: flex;
+    align-items: center;
+}
+
+.icon-and-text i {
+    margin-right: 5px; /* Adjust the margin as needed for spacing between icon and text */
+}
+.contact-left p{
+    font-size: 20px;
+    position: relative;
+}
+.contact-left p i{
+    font-size: 30px;
+    position: relative;
+}
+button {
+  background-color: transparent; /* or use background-color: none; */
+  border: none; /* optional - to remove the button border */
+}
+.button{
+    background: #755c8d; /* purple background color */
+    outline: none;
+    color: white; /* White text color */
+    padding: 15px 30px; /* Padding inside the button */
+    text-decoration: none; /* Remove underlines from the link */
+    display: inline-block;
+    position: relative;
+    margin-left: 90px;
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.button:hover{
+    background: #c9a3ef;
+    color: #ffffff;
+    transform: translateY(-10px);
+    transition: background 0.5s, transform 0.5s;
+}
+.copyright p{
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    background:#747474;
+    margin-top: 75px;
+}
+.fa-solid{
+    display: none;
+}
+/*---------------------------------------css for small screen----------------------------------*/
+@media only screen and (max-width: 600px){
+    .kppic{
+        background-image: url(kathleenpachecoppcopy.JPG);
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+      }
+    .header-text p{
+        margin-top: 350px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        }
+    .header-text h1{
+            font-size: 40px;
+            margin-top: 0%;
+        }
+    .sub-title{
+        font-size: 45px;
+        margin-top: -10px;
+    }
+    .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+}
